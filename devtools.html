@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="devtools.css" />
+    <script src="devtools.js"></script>
+    <script src="/utils/object.utils.js"></script>
+    <script src="/utils/navigation.utils.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-utils-wrapper">
+        <button class="clear-button" id="clear-button">
+          <img class="clear-icon" src="/icons/clear-icon.svg" alt="clear" />
+        </button>
+        <div class="separator"></div>
+        <div class="expand-wrapper" id="expand-wrapper">
+          <input class="expand-checkbox" type="checkbox" id="expand" />
+          <label class="expand-label" for="expand">Expand</label>
+        </div>
+        <div class="separator"></div>
+      </div>
+      <div class="search-wrapper">
+        <input class="search" type="search" placeholder="search" id="search" />
+        <div class="score-wrapper" id="score-wrapper">
+          <span id="summary"></span>
+          <button class="arrow-button" id="arrow-button-down">
+            <img
+              class="arrow-icon"
+              src="/icons/arrow-icon.svg"
+              alt="arrow-icon.svg"
+            />
+          </button>
+          <button class="arrow-button" id="arrow-button-up">
+            <img
+              class="arrow-icon reverse"
+              src="/icons/arrow-icon.svg"
+              alt="arrow-icon.svg"
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <main id="content">
+      <ul class="request-list" id="request-list"></ul>
+    </main>
+    <div id="root"></div>
+  </body>
+</html>
