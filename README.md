@@ -1,3 +1,3 @@
-# mail-link-healer
+#mail-link-healer
 
 Простое расширение для Google Chrome.
